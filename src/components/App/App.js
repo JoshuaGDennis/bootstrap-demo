@@ -4,6 +4,7 @@ import React from 'react'
 import Hero from '../Hero'
 import Card from '../Card'
 import Section from '../Section'
+import Carousel from '../Carousel'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
@@ -67,6 +68,16 @@ const App = () =>  (
                 <Card title="Card title" image={Sample1}>
                     SOME TEXT
                 </Card>
+            </Col>
+        </Section>
+
+        <Section title="Carousel">
+            <Col>
+                <Carousel items={[
+                    { img: Sample1, caption: "First slide", },
+                    { img: Sample2, caption: "Second slide", },
+                    { img: Sample3, caption: "Third slide", }
+                ]} />
             </Col>
         </Section>
     </>
