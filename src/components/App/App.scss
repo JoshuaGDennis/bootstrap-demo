@@ -1,0 +1,14 @@
+.section {
+    h2 {
+        text-align: center;
+        margin: 1rem 0 2rem;
+    }
+
+    &:nth-of-type(odd) {
+        background-color: #f3f3ff;
+    }
+
+    margin: 2rem 0;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
