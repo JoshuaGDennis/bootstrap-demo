@@ -39,13 +39,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@babel/core", "npm:7.12.3"],
             ["@babel/preset-react", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:7.12.5"],
+            ["@popperjs/core", "npm:2.5.4"],
             ["babel-loader", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:8.2.1"],
             ["bootstrap", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:4.5.3"],
             ["css-loader", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:5.0.1"],
             ["dart-sass", "npm:1.25.0"],
             ["file-loader", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:6.2.0"],
             ["html-webpack-plugin", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:4.5.0"],
+            ["jquery", "npm:3.5.1"],
             ["node-sass", "npm:5.0.0"],
+            ["popper.js", "npm:1.16.1"],
             ["react", "npm:17.0.1"],
             ["react-bootstrap", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:1.4.0"],
             ["react-dom", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:17.0.1"],
@@ -1455,8 +1458,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bootstrap", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:4.5.3"],
             ["@types/jquery", null],
             ["@types/popper.js", null],
-            ["jquery", null],
-            ["popper.js", null]
+            ["jquery", "npm:3.5.1"],
+            ["popper.js", "npm:1.16.1"]
           ],
           "packagePeers": [
             "@types/jquery",
@@ -1474,13 +1477,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bootstrap-demo", "workspace:."],
             ["@babel/core", "npm:7.12.3"],
             ["@babel/preset-react", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:7.12.5"],
+            ["@popperjs/core", "npm:2.5.4"],
             ["babel-loader", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:8.2.1"],
             ["bootstrap", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:4.5.3"],
             ["css-loader", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:5.0.1"],
             ["dart-sass", "npm:1.25.0"],
             ["file-loader", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:6.2.0"],
             ["html-webpack-plugin", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:4.5.0"],
+            ["jquery", "npm:3.5.1"],
             ["node-sass", "npm:5.0.0"],
+            ["popper.js", "npm:1.16.1"],
             ["react", "npm:17.0.1"],
             ["react-bootstrap", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:1.4.0"],
             ["react-dom", "virtual:8216df16b5b9ae5e7edb7559fa65795e8cdd85b1c29a8dfe58687774e3042dc75c8ebae300a3a124165c81e8f194effa4a6ab7ed6ed2806f331969755078608a#npm:17.0.1"],
@@ -4210,6 +4216,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["jquery", [
+        ["npm:3.5.1", {
+          "packageLocation": "./.yarn/cache/jquery-npm-3.5.1-965b25dbd8-c50818c848.zip/node_modules/jquery/",
+          "packageDependencies": [
+            ["jquery", "npm:3.5.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["js-base64", [
         ["npm:2.6.4", {
           "packageLocation": "./.yarn/cache/js-base64-npm-2.6.4-569350f803-f3fadb18c2.zip/node_modules/js-base64/",
@@ -5474,6 +5489,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["pkg-dir", "npm:4.2.0"],
             ["find-up", "npm:4.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["popper.js", [
+        ["npm:1.16.1", {
+          "packageLocation": "./.yarn/cache/popper.js-npm-1.16.1-a99192bd83-eb53806fb7.zip/node_modules/popper.js/",
+          "packageDependencies": [
+            ["popper.js", "npm:1.16.1"]
           ],
           "linkType": "HARD",
         }]

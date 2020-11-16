@@ -3,9 +3,12 @@
   "main": "index.js",
   "author": "Josh Dennis",
   "dependencies": {
+    "@popperjs/core": "^2.5.4",
     "bootstrap": "^4.5.3",
     "dart-sass": "^1.25.0",
+    "jquery": "^3.5.1",
     "node-sass": "^5.0.0",
+    "popper.js": "^1.16.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1"

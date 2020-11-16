@@ -13,6 +13,9 @@ import Container from 'react-bootstrap/Container'
 import Sample1 from '../../../assets/sample-1.jpg'
 import Sample2 from '../../../assets/sample-2.jpg'
 import Sample3 from '../../../assets/sample-3.jpg'
+import ImageSection from '../../sections/ImageSection'
+import ModalSection from '../../sections/ModalSection'
+import { Modal } from "bootstrap"
 
 const App = () =>  (
     <>
@@ -42,17 +45,7 @@ const App = () =>  (
             </Col>
         </Section>
 
-        <Section title="Images">
-            <Col xs={12} md={4}>
-                <Image src={Sample1} fluid rounded />
-            </Col>
-            <Col xs={12} md={4}>
-                <Image src={Sample2} fluid rounded />
-            </Col>
-            <Col xs={12} md={4}>
-                <Image src={Sample3} fluid rounded />
-            </Col>
-        </Section>
+        <ImageSection />
 
         <Section title="Cards">
             <Col xs={12} md={4}>
@@ -117,7 +110,7 @@ const App = () =>  (
                             placeholder: "Email address", 
                             type: "email", 
                             required: true, 
-                            errorText: "Please enter an email address" 
+                            errorText: "Please enter a valid email address" 
                         },
                         { 
                             id: "formPassword", 
@@ -130,6 +123,8 @@ const App = () =>  (
                 />
             </Col>
         </Section>
+
+        <ModalSection />
     </>
 );
 
