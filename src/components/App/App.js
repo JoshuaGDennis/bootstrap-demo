@@ -5,7 +5,6 @@ import Hero from '../Hero'
 import Card from '../Card'
 import Form from '../Form'
 import Section from '../Section'
-import Carousel from '../Carousel'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
@@ -15,7 +14,7 @@ import Sample2 from '../../../assets/sample-2.jpg'
 import Sample3 from '../../../assets/sample-3.jpg'
 import ImageSection from '../../sections/ImageSection'
 import ModalSection from '../../sections/ModalSection'
-import { Modal } from "bootstrap"
+import CarouselSection from '../../sections/CarouselSection'
 
 const App = () =>  (
     <>
@@ -89,15 +88,7 @@ const App = () =>  (
             </Col>
         </Section>
 
-        <Section title="Carousel">
-            <Col>
-                <Carousel items={[
-                    { img: Sample1, caption: "First slide", },
-                    { img: Sample2, caption: "Second slide", },
-                    { img: Sample3, caption: "Third slide", }
-                ]} />
-            </Col>
-        </Section>
+        <CarouselSection />
 
         <Section title="Forms" center>
             <Col xs={12} md={6}>
