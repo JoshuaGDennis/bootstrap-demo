@@ -6,12 +6,11 @@ import Container from 'react-bootstrap/Container'
 const Hero = () => (
     <Jumbotron fluid>
         <Container>
-            <h1>Fluid jumbotron</h1>
+            <h1>React Bootstrap Demo!</h1>
             <p>
-                This is a modified jumbotron that occupies the entire horizontal space of
-                its parent.
+                This is just a landing page highlighting some of the cool things that React-bootstrap has to offer!
             </p>
-            <Button variant="primary">Learn more</Button>
+            <Button variant="primary" href="https://react-bootstrap.github.io/components/alerts" target="_blank">Learn more</Button>
         </Container>
     </Jumbotron>
 )

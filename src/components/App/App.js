@@ -3,6 +3,7 @@ import Nav from '../Nav'
 import React from 'react'
 import Hero from '../Hero'
 import Card from '../Card'
+import Form from '../Form'
 import Section from '../Section'
 import Carousel from '../Carousel'
 import Row from 'react-bootstrap/Row'
@@ -55,17 +56,41 @@ const App = () =>  (
 
         <Section title="Cards">
             <Col xs={12} md={4}>
-                <Card title="Card title" image={Sample3}>
+                <Card 
+                    title="Card title"
+                    subtitle="Card subtitle" 
+                    image={Sample3}
+                    links={[ 
+                        { text: 'Link 1', href: '#' },
+                        { text: 'Link 2', href: '#' },
+                    ]} 
+                >
                     SOME TEXT
                 </Card>
             </Col>
             <Col xs={12} md={4}>
-                <Card title="Card title" image={Sample2}>
+                <Card 
+                    title="Card title"
+                    subtitle="Card subtitle" 
+                    image={Sample2}
+                    links={[ 
+                        { text: 'Link 1', href: '#' },
+                        { text: 'Link 2', href: '#' },
+                    ]} 
+                >
                     SOME TEXT
                 </Card>
             </Col>
             <Col xs={12} md={4}>
-                <Card title="Card title" image={Sample1}>
+                <Card 
+                    title="Card title"
+                    subtitle="Card subtitle" 
+                    image={Sample1}
+                    links={[ 
+                        { text: 'Link 1', href: '#' },
+                        { text: 'Link 2', href: '#' },
+                    ]} 
+                >
                     SOME TEXT
                 </Card>
             </Col>
@@ -78,6 +103,31 @@ const App = () =>  (
                     { img: Sample2, caption: "Second slide", },
                     { img: Sample3, caption: "Third slide", }
                 ]} />
+            </Col>
+        </Section>
+
+        <Section title="Forms" center>
+            <Col xs={12} md={6}>
+                <Form 
+                    formTitle="Login form"
+                    onSubmit={() => console.log("submitted!!!")} 
+                    inputs={[
+                        { 
+                            id: "formEmail", 
+                            placeholder: "Email address", 
+                            type: "email", 
+                            required: true, 
+                            errorText: "Please enter an email address" 
+                        },
+                        { 
+                            id: "formPassword", 
+                            placeholder: "Password", 
+                            type: "password", 
+                            required: true, 
+                            errorText: "Please enter a password" 
+                        }
+                    ]}
+                />
             </Col>
         </Section>
     </>
