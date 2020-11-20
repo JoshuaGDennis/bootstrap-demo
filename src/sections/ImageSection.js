@@ -1,6 +1,6 @@
 import Col from 'react-bootstrap/Col'
-import Form from '../components/Form'
 import React, { useState } from 'react'
+import Form from 'react-bootstrap/Form'
 import Image from 'react-bootstrap/Image'
 import Section from '../components/Section'
 import Sample1 from '../../assets/sample-1.jpg'
@@ -42,27 +42,12 @@ const ImageSection = () => {
                 />
             </Col>
             <Col xs={12} md={3}>
-                <Form 
-                    formTitle="Image controls"
-                    inputs={[ 
-                        { 
-                            label: "Rounded corners", 
-                            type: 'checkbox',
-                            onChange: (e) => setRounded(e.target.checked)
-                        },
-                        {
-                            label: 'Rounded circles',
-                            type: "checkbox",
-                            onChange: (e) => setCircle(e.target.checked)
-                        },
-                        {
-                            label: 'Thumbnail',
-                            type: "checkbox",
-                            onChange: (e) => setThumbnail(e.target.checked)
-                        }
-                    ]}
-                    noSubmit
-                />
+                <h3>Image controls</h3>
+                <Form>
+                    <Form.Check label="Rounded corners" onChange={e => setRounded(e.target.checked)} />
+                    <Form.Check label="Rounded circles" onChange={e => setCircle(e.target.checked)} />
+                    <Form.Check label="Thumbnail" onChange={e => setThumbnail(e.target.checked)} />
+                </Form>
             </Col>
         </Section>
     )

@@ -1,5 +1,5 @@
 import Col from 'react-bootstrap/Col'
-import Form from '../components/Form'
+import Form from 'react-bootstrap/Form'
 import React, { useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import Section from '../components/Section'
@@ -22,14 +22,10 @@ const ModalSection = () => {
                 </Modal.Header>
 
                 <Modal.Body>
-                    <Form 
-                        formTitle="Modal controls" 
-                        inputs={[
-                            { label: 'centered', type: 'checkbox', onChange: (e) => setCentered(e.target.checked), checked: centered },
-                            { label: 'strict', type: 'checkbox', onChange: (e) => setStrict(e.target.checked)}
-                        ]}
-                        noSubmit
-                    /> 
+                    <Form>
+                        <Form.Check label="Centered" onChange={e => setCentered(e.target.checked)} checked={centered} />
+                        <Form.Check label="Strict (Won't close on click away)" onChange={e => setStrict(e.target.checked)} />
+                    </Form>
                 </Modal.Body>
 
                 <Modal.Footer>

@@ -1,6 +1,6 @@
 import Col from 'react-bootstrap/Col'
-import Form from '../components/Form'
 import React, { useState } from 'react'
+import Form from 'react-bootstrap/Form'
 import Section from '../components/Section'
 import Carousel from 'react-bootstrap/Carousel'
 import Sample1 from '../../assets/sample-1.jpg'
@@ -43,23 +43,11 @@ const CarouselSection = () => {
             </Col>
 
             <Col xs={12} md={4}>
-                <Form 
-                    formTitle="Carousel controls"
-                    inputs={[
-                        { 
-                            label: 'Fade', 
-                            type: "checkbox", 
-                            onChange: (e) => setFade(e.target.checked) 
-                        },
-                        { 
-                            label: 'Indicators', 
-                            type: 'checkbox', 
-                            onChange: (e) => setIndicators(e.target.checked),
-                            checked: indicators
-                        }
-                    ]}
-                    noSubmit
-                />
+                <h3>Carousel controls</h3>
+                <Form>
+                    <Form.Check label="Fade" onChange={e => setFade(e.target.checked)} />
+                    <Form.Check label="Indicators" onChange={e => setIndicators(e.target.checked)} checked={indicators} />
+                </Form>
             </Col>
         </Section>
     )

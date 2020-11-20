@@ -13,18 +13,6 @@
     padding-bottom: 2rem;
 }
 
-form {
-    .form-group {
-        &.checkbox-group {
-            margin: 0;
-        }
-
-        .form-check {
-            float: left;
-        }
-    }
-}
-
 img {
     transition: 0.2s all ease;
 }
