@@ -43,7 +43,6 @@ const CarouselSection = () => {
             </Col>
 
             <Col xs={12} md={4}>
-                <h3>Carousel controls</h3>
                 <Form>
                     <Form.Check label="Fade" onChange={e => setFade(e.target.checked)} />
                     <Form.Check label="Indicators" onChange={e => setIndicators(e.target.checked)} checked={indicators} />

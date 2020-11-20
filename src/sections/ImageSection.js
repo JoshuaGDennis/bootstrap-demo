@@ -42,7 +42,6 @@ const ImageSection = () => {
                 />
             </Col>
             <Col xs={12} md={3}>
-                <h3>Image controls</h3>
                 <Form>
                     <Form.Check label="Rounded corners" onChange={e => setRounded(e.target.checked)} />
                     <Form.Check label="Rounded circles" onChange={e => setCircle(e.target.checked)} />

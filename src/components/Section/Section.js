@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 
 const Section = ({ children, title, center }) => (
     <div className="section">
-        {title && <h2>{title}</h2>}
+        {title && <h2 className="section-title">{title}</h2>}
         <Container>
             <Row className={center ? "justify-content-center" : ""}>
                 {children}

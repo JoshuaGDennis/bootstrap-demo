@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 
 const CustomNav = () => (
-    <Navbar bg="light" expand="lg" sticky="top">
+    <Navbar bg="light" expand="md" sticky="top">
         <Navbar.Brand>React Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

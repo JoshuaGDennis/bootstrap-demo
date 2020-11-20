@@ -8,7 +8,7 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem'
 
 const CardSection = () => (
     <Section title="Cards">
-        <Col xs={12} md={3}>
+        <Col xs={12} md={6} lg={3}>
             <Card>
                 <Card.Header>Card header</Card.Header>
                 <Card.Body>
@@ -23,7 +23,7 @@ const CardSection = () => (
             </Card>
         </Col>
 
-        <Col xs={12} md={3}>
+        <Col xs={12} md={6} lg={3}>
             <Card>
                 <Card.Body>
                     <Card.Body>
@@ -37,7 +37,7 @@ const CardSection = () => (
             </Card>
         </Col>
 
-        <Col xs={12} md={3}>
+        <Col xs={12} md={6} lg={3}>
             <Card>
                 <Card.Img variant="top" src={Sample1} />
                 <Card.Body>
@@ -47,7 +47,7 @@ const CardSection = () => (
             </Card>
         </Col>
 
-        <Col xs={12} md={3}>
+        <Col xs={12} md={6} lg={3}>
             <Card>
                 <Card.Body>
                     <Card.Title>This is the card title</Card.Title>

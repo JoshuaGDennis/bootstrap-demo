@@ -1,5 +1,5 @@
 .section {
-    h2 {
+    .section-title {
         text-align: center;
         margin: 1rem 0 2rem;
     }
@@ -17,8 +17,6 @@ img {
     transition: 0.2s all ease;
 }
 
-@media only screen and (max-width: 500px) {
-    .col-12 {
-        margin-bottom: 1rem;
-    }
+.card {
+    margin-bottom: 1rem;
 }

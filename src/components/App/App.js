@@ -11,6 +11,7 @@ import ModalSection from '../../sections/ModalSection'
 import ToastSection from '../../sections/ToastSection'
 import PopoverSection from '../../sections/PopoverSection'
 import CarouselSection from '../../sections/CarouselSection'
+import ButtonSection from "../../sections/ButtonSection"
 
 const App = () =>  (
     <>
@@ -18,14 +19,14 @@ const App = () =>  (
         <Hero />
         <Section title="Headings">
             <Col xs={12} md={4}>
-                <h3>First heading</h3>
+                <h1>First heading</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in leo nisi. Donec ut lacinia dui.
                     Aliquam cursus aliquet massa a rhoncus. Vivamus eleifend porta eleifend.
                 </p>
             </Col>
             <Col xs={12} md={4}>
-                <h3>Second heading</h3>
+                <h2>Second heading</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in leo nisi. Donec ut lacinia dui.
                     Aliquam cursus aliquet massa a rhoncus. Vivamus eleifend porta eleifend.
@@ -39,6 +40,8 @@ const App = () =>  (
                 </p>
             </Col>
         </Section>
+
+        <ButtonSection />
 
         <ImageSection />
 
