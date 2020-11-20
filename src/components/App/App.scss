@@ -21,6 +21,8 @@ img {
     margin-bottom: 1rem;
 }
 
+// You can override standard bootstrap theme colors here!
+// e.g. 'primary', 'secondary', 'success', 'warning', 'danger', 'info', 'light', 'dark', 'link'
 $theme-colors: (
     "danger": red,
     "info": blue
