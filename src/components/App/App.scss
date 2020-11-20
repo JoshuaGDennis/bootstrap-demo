@@ -20,3 +20,10 @@ img {
 .card {
     margin-bottom: 1rem;
 }
+
+$theme-colors: (
+    "danger": red,
+    "info": blue
+);
+
+@import "~bootstrap/scss/bootstrap";

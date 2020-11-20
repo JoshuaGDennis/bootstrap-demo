@@ -18,37 +18,29 @@ const TitledPopover = (
 const TooltipPopover = <Tooltip>This is disabled!</Tooltip>
 
 const PopoverSection = () => {
-    const [position, setPosition] = useState('right')
+    const [position, setPosition] = useState('top')
 
     return (
         <Section title="Popovers">
             <Col xs={12} md={8}>
-                <Row>
-                    <Col>    
-                        <OverlayTrigger trigger="click" placement={position} overlay={TitledPopover}>
-                            <Button>Click to show popover!</Button>
-                        </OverlayTrigger>
-                    </Col>
-                </Row>
+                <OverlayTrigger trigger="click" placement={position} overlay={TitledPopover}>
+                    <Button className="m-1">Click to show popover!</Button>
+                </OverlayTrigger>
 
-                <Row style={{ marginTop: '1rem' }}>
-                    <Col>
-                        <OverlayTrigger overlay={TooltipPopover} placement={position}>
-                            <span className="d-inline-block">
-                                <Button style={{ pointerEvents: 'none' }} disabled>
-                                    Hover over me!
-                                </Button>
-                            </span>
-                        </OverlayTrigger>
-                    </Col>
-                </Row>
+                <OverlayTrigger overlay={TooltipPopover} placement={position}>
+                    <span className="d-inline-block m-1">
+                        <Button style={{ pointerEvents: 'none' }} disabled>
+                            Hover over me!
+                        </Button>
+                    </span>
+                </OverlayTrigger>
             </Col>
 
             <Col xs={12} md={4}>
                 <Form>
                     <Form.Group>
                         <Form.Label>Position</Form.Label>
-                        <Form.Control as="select" defaultValue="right" onChange={e => setPosition(e.target.value)}>
+                        <Form.Control as="select" defaultValue="top" onChange={e => setPosition(e.target.value)}>
                             <option value="left">Left</option>
                             <option value="right">Right</option>
                             <option value="top">Top</option>
