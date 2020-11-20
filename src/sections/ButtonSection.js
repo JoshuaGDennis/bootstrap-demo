@@ -3,10 +3,13 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Section from '../components/Section'
 import Button from 'react-bootstrap/Button'
+import Spinner from 'react-bootstrap/Spinner'
 
 const ButtonSection = () => {
     const [ outline, setOutline ] = useState(false)
+    const [ loading, setLoading ] = useState(false)
     const [ disabled, setDisabled ] = useState(false)
+    const [ animation, setAnimation ] = useState('border')
 
     return (
         <Section title="Buttons">
@@ -16,10 +19,17 @@ const ButtonSection = () => {
                         className="m-1" 
                         key={variant} 
                         variant={`${outline ? 'outline-' : ''}${variant}`} 
-                        disabled={disabled} 
+                        disabled={disabled || loading} 
                         size="lg"
                     >
-                        {variant}
+                        {loading 
+                            ? (
+                                <Spinner animation={animation} role="status">
+                                    <span className="sr-only">Loading...</span>
+                                </Spinner>
+                            ) 
+                            : variant
+                        }
                     </Button>
                 ))}
             </Col>
@@ -28,6 +38,14 @@ const ButtonSection = () => {
                 <Form>
                     <Form.Check label="Outline" onChange={e => setOutline(e.target.checked)} />
                     <Form.Check label="Disabled" onChange={e => setDisabled(e.target.checked)} />
+                    <Form.Check label="Loading" onChange={e => setLoading(e.target.checked)}/>
+                    <Form.Group>
+                        <Form.Label>Spinner type</Form.Label>
+                        <Form.Control as="select" defaultValue="border" onChange={e => setAnimation(e.target.value)}>
+                            <option value="border">Border</option>
+                            <option value="grow">Grow</option>
+                        </Form.Control>
+                    </Form.Group>
                 </Form>
             </Col>
         </Section>

@@ -9,13 +9,15 @@ import Sample3 from '../../assets/sample-3.jpg'
 
 
 const CarouselSection = () => {
+    const [ wrap, setWrap ] = useState(true)
     const [ fade, setFade ] = useState(false)
+    const [ controls, setControls ] = useState(true)
     const [ indicators, setIndicators ] = useState(true)
 
     return (
         <Section title="Carousel">
             <Col xs={12} md={8}>
-                <Carousel fade={fade} indicators={indicators}>
+                <Carousel fade={fade} indicators={indicators} controls={controls} wrap={wrap}>
                     <Carousel.Item>
                         <img className="d-block w-100" src={Sample1} alt="First slide" />
                         <Carousel.Caption>
@@ -46,6 +48,8 @@ const CarouselSection = () => {
                 <Form>
                     <Form.Check label="Fade" onChange={e => setFade(e.target.checked)} />
                     <Form.Check label="Indicators" onChange={e => setIndicators(e.target.checked)} checked={indicators} />
+                    <Form.Check label="Controls" onChange={e => setControls(e.target.checked)} checked={controls} />
+                    <Form.Check label="Wrap" onChange={e => setWrap(e.target.checked)} checked={wrap} />
                 </Form>
             </Col>
         </Section>
