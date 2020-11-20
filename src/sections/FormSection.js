@@ -39,7 +39,7 @@ const FormSection = () => {
                             <Form.Label>Address 1</Form.Label>
                             <Form.Control placeholder="House name, street name" />
                             <Form.Text className="text-muted">
-                                This could be some not about the input!
+                                This could be some note about the input!
                             </Form.Text>
                         </Form.Group>
                     </Row>
